@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>s0sCoD3</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="#home">
+                <img src="assets/img/navbar_logo.png">
+            </a>
+        </div>
+
+        <nav class="pc-nav">
+            <a href="#about_us">ABOUT US</a>
+            <a href="#notice">NOTICE</a>
+            <a href="#gallery">GALLERY</a>
+            <a href="#members">MEMBERS</a>
+            <a href="#outro">OUTRO</a>
+            <a href="#contact">CONTACT</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <nav class="dropdown-menu" id="dropdownMenu">
+        <a href="#about_us">ABOUT US</a>
+        <a href="#notice">NOTICE</a>
+        <a href="#gallery">GALLERY</a>
+        <a href="#members">MEMBERS</a>
+        <a href="#outro">OUTRO</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <!-- HERO -->
+    <section class="home-section" id="home">
+        <div id="hero-text">
+            <h2 class="home-title">
+                <span id="typing-text" style="font-family: PyeongChangPeace-Bold;"></span>
+                <span class="typing-cursor">|</span>
+
+                <!-- 여기에 원하는 문장들을 입력 -->
+                <span id="typing-data" data-messages="
+                세종과학예술영재학교,
+                정보보안 및 해킹 동아리,
+                소스코드입니다
+            " hidden></span>
+            </h2>
+        </div>
+    </section>
+
+    <!-- ABOUT US -->
+    <section id="about_us"
+        style="background-image: linear-gradient(to top, rgba(245, 247, 250, 0.75) 0%, rgba(245, 247, 250, 0) 75%);">
+        <div class="container fade-in-box">
+            <h2 class="section-title">동아리 소스코드란?</h2>
+
+            <div class="doc intro-card">
+                <img class="doc-img" src="assets/img/intro-img.png">
+
+                <div class="doc-text">
+                    <div class="intro-title">안녕하세요, 교내 정보과학 동아리 <span
+                            style="color: #013b84;"><strong>소스코드</strong></span>입니다.</div>
+                    내용 작성
+                    <br>
+                    <br>
+                    .
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- NOTICE -->
+    <section id="notice" style="background-color: rgba(245, 247, 250, 0.75);">
+        <div class="container fade-in-box">
+            <h2 class="section-title">안내 사항</h2>
+            <div id="notice-list-container">
+                <p style="text-align: center; padding: 20px;">공지사항을 불러오는 중입니다...</p>
+            </div>
+        </div>
+    </section>
+
+    <!--GALLERY-->
+    <section id="gallery" style="background-color: rgba(245, 247, 250, 0.75);">
+        <div class="container fade-in-box">
+            <h2 class="section-title">활동 이미지</h2>
+
+            <div class="card-container">
+
+                <div class="card" onclick="openModal('https://picsum.photos/800/600?random=11')">
+                    <img src="https://picsum.photos/300/200?random=11">
+                    <div class="card-content">
+                        <div class="card-title">카드 제목 1</div>
+                        <div class="card-text">내용 작성.</div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openModal('https://picsum.photos/800/600?random=12')">
+                    <img src="https://picsum.photos/300/200?random=12">
+                    <div class="card-content">
+                        <div class="card-title">카드 제목 2</div>
+                        <div class="card-text">내용 작성.</div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openModal('https://picsum.photos/800/600?random=13')">
+                    <img src="https://picsum.photos/300/200?random=13">
+                    <div class="card-content">
+                        <div class="card-title">카드 제목 3</div>
+                        <div class="card-text">내용 작성.</div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openModal('https://picsum.photos/800/600?random=14')">
+                    <img src="https://picsum.photos/300/200?random=14">
+                    <div class="card-content">
+                        <div class="card-title">카드 제목 4</div>
+                        <div class="card-text">내용 작성.</div>
+                    </div>
+                </div>
+
+                <div class="card" onclick="openModal('https://picsum.photos/800/600?random=15')">
+                    <img src="https://picsum.photos/300/200?random=15">
+                    <div class="card-content">
+                        <div class="card-title">카드 제목 5</div>
+                        <div class="card-text">내용 작성.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="imageModal" class="modal" onclick="closeModal()">
+            <img id="modalImg">
+            <div class="close-text">아무 곳이나 클릭하여 닫기</div>
+        </div>
+    </section>
+
+    <!-- MEMBERS -->
+    <section id="members" style="background-color: rgba(245, 247, 250, 0.75);">
+        <div class="container fade-in-box">
+            <h2 class="section-title">소스코드 구성원</h2>
+
+            <div class="infobox-container">
+                <div class="infobox-image">
+                    <img src="assets/img/info-img.png">
+                </div>
+                <div class="main-header">
+                    <div class="title-name">2026 s0sCoD3</div>
+                </div>
+                <table class="infobox-table">
+                    <tbody>
+                        <tr>
+                            <th rowspan="2" class="label">부원</th>
+                            <th class="label" style="width: 50px;">10기</th>
+                            <td class="data">김서준, 신재민, 이홍균, 양호연, <strong>김지환</strong>, 이준규</td>
+                        </tr>
+                        <tr>
+                            <th class="label">11기</th>
+                            <td class="data">김도형, 김효지, 장민규, 김현우S, 임현준, <strong>황세연</strong></td>
+                        </tr>
+                        <tr>
+                            <th colspan="2" class="label">담당교사</th>
+                            <td class="data"><strong>이*아 선생님</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUTRO -->
+    <section id="outro" style="
+    background-image:
+      linear-gradient(to bottom, rgba(35, 186, 239, 0.3) 0%, rgba(35, 186, 239, 0.7) 33%, rgba(35, 186, 239, 0.7) 67%, rgba(35, 186, 239, 0.3) 100%),
+      url('assets/img/outro-bg.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  ">
+        <div class="container fade-in-box">
+            <h2 class="section-title" style="color: aliceblue">소스코드 지원 방법 or 인삿말</h2>
+
+            <div class="doc outro-card">
+                <div class="doc-text">
+                    내용 작성
+                    <br>
+                    <br>
+                    감사합니다.
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact"
+        style="background-image: linear-gradient(to bottom, rgba(245, 247, 250, 0.75) 0%, rgba(245, 247, 250, 0) 75%);">
+        <div class="container fade-in-box">
+            <h2 class="section-title">Contact</h2>
+            <i class="bi bi-envelope"></i> s0sCoD3@sasa.hs.kr<br>
+            <i class="bi bi-instagram"></i> @s0scod3._.official<br>
+            <a href="mailto:s0sCoD3@sasa.hs.kr"><span class="ico-circle"><i class="bi bi-envelope"></i></span></a>
+            <a href="https://www.instagram.com/s0scod3._.official/"><span class="ico-circle"><i
+                        class="bi bi-instagram"></i></span></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        © 2026 s0sCoD3. All rights reserved.<br>
+        Developed by sasa10th.
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
